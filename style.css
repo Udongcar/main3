@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    font-family: '맑은 고딕'
+    color:red;
+}
+
+/*콘텐츠 A 이미지*/
+
+.conA{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(image/car.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    color: var(--text-bright-color);
+    text-align: center;
+}
+img{
+    width:80px;
+    height:80px;
+}
+.conA h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 10vw;
+    letter-spacing:0.2em;
+    margin-left: 0.2em;
+    color: #fff;
+}
+
+.conA P{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size:18px;
+    color: #fff;
+}
+
+.conA a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentcolor;
+    border-radius: 6px;
+    background: #bf6a7a;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.conA a:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+}
+
+@media (min-width:768px){
+    .conA h1{
+        font-size: 115px;
+    }
+    .conA P{
+        font-size:24px;
+    }
+}
+
+
+
+/*콘텐츠 B 내용*/
+
+conB .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.conB .text{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.conB .text{
+    text-align: center
+}
+
+.conB h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.conB p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size:14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conB a{
+    color: #5d9ab2;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.conB a:hover{
+    text-decoration: underline;
+}
+
+.conB .icon{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size:40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+    color:#fff;
+    color:var(--icon-color);
+}
+
+@media(min-width:768px){
+    .conB .container{
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left:auto;
+        margin-right: auto;
+        
+    }
+    .conB .text{
+        flex:1;
+    }
+}
+
+/*콘텐츠 c*/
+
+.conC {
+    background-color: black;
+/*    background-color: var(--main-color);*/
+    color: #fff;
+   /* color: var(--text-bright-color);*/
+}
+
+.conC h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conC p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size:14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conC a{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border:solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #bf6a7a;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.conC a:hover{
+    background-image: linear-gradient(
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2)
+    );
+}
+
+.conC .photo{
+    min-height: 300px;
+    background-image: url(image/A1.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.conC .text{
+    padding: 10px;
+}
+
+@media (min-width:768px){
+    .conC .container{
+        display:flex;
+        padding: 50px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .conC .photo{
+        flex:3;        
+    }
+    .conC .text{
+        flex:2;
+        padding: 50px;
+            }
+}
+
+/*콘텐츠 D */
+
+.conD {
+    background-color: black;
+/*    background-color: var(--main-color);*/
+    color: #fff;
+   /* color: var(--text-bright-color);*/
+}
+
+.conD h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size:20px;
+}
+
+.conD p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size:14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conD .text{
+    padding: 10px;
+}
+.conD a{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border:solid 3px currentColor;
+    /*box-shadow: 0 0 0 1px #888;*/
+    border-radius: 6px;
+    background-color: #bf6a7a;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.conD a:hover{
+    background-image: linear-gradient(
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2)
+    );
+}
+
+.conD .photo{
+    min-height: 300px;
+    background-image: url(image/plug.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+@media (min-width:768px){
+    .conD .container{
+        display:flex;
+        padding: 50px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .conD .photo{
+        flex:3;        
+    }
+    .conD .text{
+        flex:2;
+        padding: 50px;
+            }
+}
+
+/*푸터 A*/
+footer{
+    color:#fff;
+    background-color: black;
+    text-align: center;
+    
+}
+
+footer .container{
+    padding: 40px 20px;
+    
+}
+
+    
+.footA h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 30px;
+    letter-spacing:0.2em;
+}
+
+.footA p{
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    
+}
+
+.footA a{
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footA{
+    margin-bottom: 30px;
+}
+
+/*푸터B*/
+
+.footB{
+    color:#fff;
+    background-color: #2b5566;
+}
+
+.footB h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size:14px;
+    padding: 5px;
+}
+.footB div{
+    margin-bottom: 5px;
+}
+
+.footB ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footB a{
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footB a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (min-width:768px){
+    .footB {
+        display: flex; 
+    }
+    .footB div{
+        flex: 1;
+        margin-left: 10px;
+    }
+    .footB div:not(:first-child){
+        margin-left: 40px;
+    }
+    }
+
+/*#저작권*/
+
+.footC{
+    font-size: 12px;
+    text-align: center;
+    font-family:'Montserrat', 'sans-serif';
+}
+
+    
+}
